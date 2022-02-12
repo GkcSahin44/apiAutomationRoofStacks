@@ -1,0 +1,18 @@
+<testsuite failures="0"
+           name="src/test/java/roofStacks/postMethod/post.feature"
+           skipped="0"
+           tests="1"
+           time="2.342904">
+   <testcase classname="src.test.java.roofStacks.postMethod.post"
+             name="create user"
+             time="2.342904">
+      <system-out>* url baseURL ............................................................. passed
+* def createUserRequest = read(roofStackData + 'createUserRequest.json') .. passed
+* def createUserResponse = read(roofStackData + 'createUserResponse.json') . passed
+Given request createUserRequest ........................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == createUserResponse .................................. passed
+* karate.log('Response body were checked. Response is : ',response) ....... passed</system-out>
+   </testcase>
+</testsuite>
