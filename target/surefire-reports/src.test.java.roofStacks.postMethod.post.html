@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>src.test.java.roofStacks.postMethod.post</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">1</div>
+            <div class="bg-danger" id="nav-fail">0</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2022-02-12 10:58:45 PM</div>        
+      <div class="nav-container"><div class="nav-item passed"><a href="#[1:9]">[1:9] create user </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/roofStacks/postMethod/post.feature</span><span class="feature-description">Create User</span></div><div class="scenario"><div class="scenario-heading" id="[1:9]"><div class="heading-container"><div class="scenario-tags"><a class="badge badge-primary" href="karate-tags.html">positive</a></div><span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">create user </span></div><div class="scenario-time passed">ms: 2343</div></div><div class="step-row"><div class="step-container" id="[1:9]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:9]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">* url baseURL</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="1">22:58:42.336 karate.env system property was:</div><div class="step-row" data-parent="[1:9]bg"><div class="step-container" id="2"><div class="step-ref bg-step">2</div><div class="step-cell passed">* def createUserRequest = read(roofStackData + 'createUserRequest.json')</div></div><div class="time-cell passed">36</div></div><div class="step-row" data-parent="[1:9]bg"><div class="step-container" id="3"><div class="step-ref bg-step">3</div><div class="step-cell passed">* def createUserResponse = read(roofStackData + 'createUserResponse.json')</div></div><div class="time-cell passed">19</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">Given request createUserRequest</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">When method post</div></div><div class="time-cell passed">2280</div></div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">Then status 200</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">And match response == createUserResponse</div></div><div class="time-cell passed">1</div></div><div class="step-row"><div class="step-container" id="8"><div class="step-ref passed">8</div><div class="step-cell passed">* karate.log('Response body were checked. Response is : ',response)</div></div><div class="time-cell passed">6</div></div><div class="preformatted" data-parent="8">22:58:44.907 Response body were checked. Response is :  {
+  "userId": "c4f6c088-f91b-494e-b7f0-a08f48df3180"
+}</div></div></div>
+    </div>   
+  </body>
+</html>

@@ -1,0 +1,8 @@
+22:58:41.898 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:58:41.914 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 9 - ^create user$
+22:58:42.336 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - karate.env system property was:  
+22:58:44.906 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - Response body were checked. Response is :  {
+  "userId": "c4f6c088-f91b-494e-b7f0-a08f48df3180"
+}
+ 
+22:58:45.282 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/roofStacks/postMethod/post.feature

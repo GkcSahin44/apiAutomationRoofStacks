@@ -1,0 +1,1 @@
+Feature: use this feature for GET requests
