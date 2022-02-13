@@ -16,7 +16,9 @@ Bu proje Roof Stacks api otomasyonunu içermektedir.
 <h1>Proje Detayları</h1>
 
 1- Base Url , Path , Data ve Environment bilgileri karate-config dosyası içinde tanımlanmıştır.
+
 2- Json Modelleme yapısı kullanılmıştır
+
 3- Tanımlamaların tek bir yerde yapılması ile birlikte aşağıdaki faydalar sağlanmıştır.
 
     3.1 - Değişiklikler tek bir yerden yapılacaktır. ( Örnek Url : Configden değiştirilmesi yeterli olacaktır.)
