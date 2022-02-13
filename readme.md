@@ -9,6 +9,10 @@ Bu proje Roof Stacks api otomasyonunu içermektedir.
 * Java
 * Gherkin
 
+<h5>Java Setting</h5>
+
+<a href="https://easyupload.io/lomx8h">Java Ayarları</a>
+
 <h1>Proje Detayları</h1>
 
 1- Base Url , Path , Data ve Environment bilgileri karate-config dosyası içinde tanımlanmıştır.
@@ -101,5 +105,6 @@ Then user should see my account icon
 And title should changed to "My Title"
 
 ```
+
 
 
