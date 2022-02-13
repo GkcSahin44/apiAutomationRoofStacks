@@ -7,9 +7,9 @@ function fn() {
     var config = {
     env: env,
     baseURL: 'https://3e3d2990-3fca-4144-8b26-1538cf135a09.mock.pstmn.io/users',
-    qanyonEmail: "admin@digiturk.com.tr",
-    qanyonPassword: "adminPassQA",
     roofStackData:'classpath:data/',
+    configActivityPath:'activity',
+    configHeaders: 'application/json; charset=utf-8'
   }
   if (env == 'regression') {
       config.baseURL= ''

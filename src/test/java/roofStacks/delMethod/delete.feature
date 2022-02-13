@@ -2,7 +2,7 @@ Feature: Delete User
 
   Background:
     * url baseURL
-    * configure headers = {Content-Type: 'application/json'}
+    * def headers = configHeaders
     * def getUserResponse = read(roofStackData + 'getAllUserResponse.json')
     * def getUserResponseModel = read(roofStackData + 'getAllUserResponseModel.json')
     * def firstId = getUserResponse[0].id
@@ -14,7 +14,7 @@ Feature: Delete User
     When method DELETE
     Then status 200
     And match response == '#notnull'
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -23,7 +23,7 @@ Feature: Delete User
     When method DELETE
     Then status 200
     And match response == '#notnull'
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -32,7 +32,7 @@ Feature: Delete User
     When method DELETE
     Then status 200
     And match response == '#notnull'
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
     Examples:

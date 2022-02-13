@@ -2,6 +2,7 @@ Feature: Get User
 
   Background:
     * url baseURL
+    * def headers = configHeaders
     * def getUserResponse = read(roofStackData + 'getAllUserResponse.json')
     * def getUserResponseModel = read(roofStackData + 'getAllUserResponseModel.json')
     * def firstId = getUserResponse[0].id
@@ -13,7 +14,7 @@ Feature: Get User
     Then status 200
     And match response == getUserResponse
     And match response == getUserResponseModel
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
