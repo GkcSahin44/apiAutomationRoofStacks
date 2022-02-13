@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c4f6c088-f91b-494e-b7f0-a08f48df3180",
+    "username": "doejj",
+    "firstName": "jane",
+    "lastName": "doe",
+    "isActive": true
+  },
+  {
+    "id": "c3e140a4-99db-44c2-a9ea-896904745993",
+    "username": "johnthesavior",
+    "firstName": "john",
+    "lastName": "doe",
+    "isActive": false
+  }
+]
