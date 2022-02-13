@@ -24,6 +24,10 @@ Bu proje Roof Stacks api otomasyonunu içermektedir.
     3.3 - Bakım maliyetleri minimuma düşürülmüştür. ( Örnek : Create response için bir değişiklik yapılmak istendiğinde sadece ilgili json dosyasın da değişiklik yapılması yeterli olacaktır.)
     3.4 - Environment yönetimi config içerisinden yapılmaktadır.
 
+4- Karate Reporting Kullanılmıştır. 
+NOT :Senaryo çalışmayı tamamladıktan sonra rapor otomatik olarak RUN penceresinde oluşmaktadır.
+
+Örnek Rapor URL : file:///C:/Users/gok/IdeaProjects/apiAutomationRoofStacks/target/surefire-reports/src.test.java.roofStacks.postMethod.post.html
 
 Background yapısı kullanılarak code tekrarlarının önüne geçilmiştir.
 
