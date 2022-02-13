@@ -2,12 +2,13 @@ Feature: Partial Update User Activity
 
   Background:
     * url baseURL
+    * def headers = configHeaders
     * def getUserResponse = read(roofStackData + 'getAllUserResponse.json')
     * def patchUserActivityModel = read(roofStackData + 'patchUserActivityModel.json')
     * def patchUserActivityRequest = read(roofStackData + 'patchUserRequest.json')
     * def firstId = getUserResponse[0].id
     * def secondId = getUserResponse[1].id
-    * def activityPath = 'activity'
+    * def activityPath = configActivityPath
 
   @positive
   Scenario: update user activity by first id  (isActive : True)
@@ -17,7 +18,7 @@ Feature: Partial Update User Activity
     Then status 200
     And match response == patchUserActivityModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -29,7 +30,7 @@ Feature: Partial Update User Activity
     Then status 200
     And match response == patchUserActivityModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -41,7 +42,7 @@ Feature: Partial Update User Activity
     Then status 200
     And match response == patchUserActivityModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
     Examples:

@@ -2,6 +2,7 @@ Feature: Update User Information
 
   Background:
     * url baseURL
+    * def headers = configHeaders
     * def getUserResponse = read(roofStackData + 'getAllUserResponse.json')
     * def putUserInformationModel = read(roofStackData + 'UserResponse.json')
     * def putUserInformationRequest = read(roofStackData + 'putUserInformationRequest.json')
@@ -16,7 +17,7 @@ Feature: Update User Information
     Then status 200
     And match response == putUserInformationModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -27,7 +28,7 @@ Feature: Update User Information
     Then status 200
     And match response == putUserInformationModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
   @positive
@@ -40,7 +41,7 @@ Feature: Update User Information
     Then status 200
     And match response == putUserInformationModel
     And match response.userId == firstId
-    And match responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8'
+    And match responseHeaders['Content-Type'][0] == headers
     * karate.log('Response body were checked. Response is : ',response)
 
     Examples:

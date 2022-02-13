@@ -1,1 +1,0 @@
-Feature: Use this feature for scenario outline tasks
