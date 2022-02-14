@@ -44,10 +44,11 @@ Background yapısı kullanılarak code tekrarlarının önüne geçilmiştir.
 │   │   └── getAllUserResponseModel.json
 │   ├── roofStacks
 │   │   ├── allInOne.feature
+│   │   ├── create.feature
 │   │   ├── delete.feature
 │   │   ├── get.feature
 │   │   ├── patch.feature
-│   │   └── patch.feature
+│   │   └── put.feature
 │   ├── karate-config.js
 ├── readme.md
 ├── .gitignore
